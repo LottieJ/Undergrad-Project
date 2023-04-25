@@ -4,9 +4,6 @@ This repository includes scripts and notebooks associated with the University of
 
 To repeat the analysis, run all scripts from the root project directory.
 
-## Test
-[link to file](https://lottiej.github.io/Undergrad-Project/notebooks/CE0_PL9_Plot.html)
-
 ## Data
 
 The Data folder contains GH7 protein sequence FASTA files, number_cazy.csv containing the number of
