@@ -14,7 +14,7 @@ CE0_PL9 contains files relating to CE0 and PL9 analysis and visualisation.
 
 ## Build a local CAZyme database
 
-Using `cazy_webscraper` (version 2.2.7) the bash script build_cazy.sh was run to build a local CAZy database and create the output CSV file `Data/number_cazy.csv`, using the following command:
+Using `cazy_webscraper` (version 2.2.7) the bash script build_cazy.sh was run to build a local CAZy database and create the output CSV file `Data/number_cazy.csv`, using the following command: [Build CAZy](https://lottiej.github.io/Undergrad-Project/scripts/build_cazy.sh)
 
 ```bash
 bash scripts/build_cazy.sh
