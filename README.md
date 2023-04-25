@@ -1,6 +1,6 @@
 # Undergrad-Project
 Benchmarking Bioinformatic Tools to Investigate Protein Sequence Diversity in the CAZy Database
-This repository includes scripts and notebooks associated with the University of St Andrews BL4201 project of Charlotte JOhns.
+This repository includes scripts and notebooks associated with the University of St Andrews BL4201 project of Charlotte Johns.
 
 To repeat the analysis, run all scripts from the root project directory.
 
@@ -40,7 +40,7 @@ file `Data/GH7seqs/GH7.fasta`, using the command:
 bash scripts/build_GH7
 ```
 
-The jupyter notebook `notebooks/Random_Select.ipynb` was used to create randmly selected datasets of
+The jupyter notebook [Random Select](https://lottiej.github.io/Undergrad-Project/notebooks/Random_Select.html) was used to create randmly selected datasets of
 GH7 100, 300, 500, 1,000, 3,000, 5,000 and 10,000 sequences.
 
 Original datasets can be found in `Data/*seqs.fasta`.
@@ -74,12 +74,12 @@ bash scripts/Sourmash_GH7.sh 100
 Clustermaps to visualise sequence diversity were plotted using the python packages `seaborne` 
 (version 0.11.2), `pandas` (version 0.23.4) and `numpy` (version 1.18.1).
 
-`notebooks/BLASTP_Plot_GH7.ipynb` was run to plot matrix of BSR.
+[BLASTP](https://lottiej.github.io/Undergrad-Project/notebooks/BLASTP_Plot_GH7.html) was run to plot matrix of BSR.
 
-`notebooks/Sourmah_Plot_GH7.ipynb` was run to plot matrix of Jaccard indexes for each of kmer sizes
+[Sourmash](https://lottiej.github.io/Undergrad-Project/notebooks/Sourmash_Plot_GH7.html) was run to plot matrix of Jaccard indexes for each of kmer sizes
 6, 8 and 10.
 
-`notebooks/Diamond_Plot_GH7.ipynb` was run to plot matrix of BSR for each of the levels of DIAMOND
+[DIAMOND](https://lottiej.github.io/Undergrad-Project/notebooks/Diamond_Plot_GH7.html) was run to plot matrix of BSR for each of the levels of DIAMOND
 sensitivity: Fast, Mid-sensitive and Sensitive.
 
 Output clustermaps are saved as PNG files in each tools output file in `Results`.
@@ -147,15 +147,14 @@ in the output CSV file `Data/cooccurring_families/genbank_acc_multi_fams.csv`.
 
 ### Identify families that have and have not been divided into subfamilies
 
-The Jupyter notebook `notebooks/identify_cooccuring_cazy_familes.ipynb` was ran using the input of 
-`cazy_fams_subfams.csv` to split the CAZy families up 
+The Jupyter notebook [Co-occurring CAZy Families](https://lottiej.github.io/Undergrad-Project/notebooks/identify_cooccuring_cazy_familes.html) was ran using the input of `cazy_fams_subfams.csv` to split the CAZy families up 
 depending on whether they contained subfamilies, and write the out-put to 
 `Data/cooccurring_families/fams_with_subfams` and `Data/cooccurring_families/fams_withOUT_subfams` 
 respectively.
 
 ### Identify groups of CAZy families that appear in the same protein together
 
-The notebook `identifying_cooccurring_cazy_families.ipynb` was used to go through 
+The notebook [Co-occurring CAZy Families](https://lottiej.github.io/Undergrad-Project/notebooks/identify_cooccuring_cazy_familes.html) was used to go through 
 `data/cooccurring_families/genbank_acc_multi_fams.csv` and find proteins that contained multiple 
 CAZyme families. The number of proteins containing that groups of CAZyme families was recorded 
 and written to the output file `cooccurring_fams.csv`.
@@ -190,7 +189,7 @@ bash scripts/CE0_PL9_Diamond.sh
 ```
 
 This created the file `CE0_PL9rundiamondfast.tsv` which was used to run the Juypter notebook 
-`CE0_PL9.ipynb` to plot clustermaps of the normalised bitscores, query cover and percentage 
+[CE0 and PL9](https://lottiej.github.io/Undergrad-Project/notebooks/CE0_PL9.html) to plot clustermaps of the normalised bitscores, query cover and percentage 
 identity for these families. Proteins that contained both CE0 and PL9 domains were identified and 
 written to Cooccurring.csv. Proteins of interest that showed a BSR >1 to the proteins containing 
 both CAZyme family domains were identified then plotted on clustermaps of their BSR values and query cover values.
