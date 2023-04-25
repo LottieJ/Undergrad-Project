@@ -62,7 +62,7 @@ Clustermaps to visualise sequence diversity were plotted using the python packag
 
 [Sourmash](https://lottiej.github.io/Undergrad-Project/notebooks/Sourmash_Plot_GH7.html) was run to plot matrix of Jaccard indexes for each of kmer sizes 6, 8 and 10.
 
-[DIAMOND](https://lottiej.github.io/Undergrad-Project/notebooks/Diamond_Plot_GH7.html) was run to plot matrix of BSR for each of the levels of DIAMOND sensitivity: Fast, Mid-sensitive and Sensitive.
+[DIAMOND](https://lottiej.github.io/Undergrad-Project/notebooks/DIAMOND_Plot_GH7.html) was run to plot matrix of BSR for each of the levels of DIAMOND sensitivity: Fast, Mid-sensitive and Sensitive.
 
 Output clustermaps are saved as PNG files in each tools output file in `Results`.
 
@@ -122,11 +122,11 @@ Every unique pair of NCBI protein version accession and CAZy family were written
 
 ### Identify families that have and have not been divided into subfamilies
 
-The Jupyter notebook [Co-occurring CAZy Families](https://lottiej.github.io/Undergrad-Project/notebooks/identify_cooccuring_cazy_familes.html) was ran using the input of `cazy_fams_subfams.csv` to split the CAZy families up depending on whether they contained subfamilies, and write the out-put to `Data/cooccurring_families/fams_with_subfams` and `Data/cooccurring_families/fams_withOUT_subfams` respectively.
+The Jupyter notebook [Co-occurring CAZy Families](https://lottiej.github.io/Undergrad-Project/notebooks/identify_cooccurring_cazy_families.html) was ran using the input of `cazy_fams_subfams.csv` to split the CAZy families up depending on whether they contained subfamilies, and write the out-put to `Data/cooccurring_families/fams_with_subfams` and `Data/cooccurring_families/fams_withOUT_subfams` respectively.
 
 ### Identify groups of CAZy families that appear in the same protein together
 
-The notebook [Co-occurring CAZy Families](https://lottiej.github.io/Undergrad-Project/notebooks/identify_cooccuring_cazy_familes.html) was used to go through `data/cooccurring_families/genbank_acc_multi_fams.csv` and find proteins that contained multiple CAZyme families. The number of proteins containing that groups of CAZyme families was recorded and written to the output file `cooccurring_fams.csv`.
+The notebook [Co-occurring CAZy Families](https://lottiej.github.io/Undergrad-Project/notebooks/identify_cooccurring_cazy_families.html) was used to go through `data/cooccurring_families/genbank_acc_multi_fams.csv` and find proteins that contained multiple CAZyme families. The number of proteins containing that groups of CAZyme families was recorded and written to the output file `cooccurring_fams.csv`.
 
 The notebook then used the `cooccurring_fams.csv` file to find the families containing multiple catalytic domains and write them out to `multi_cat_domains_groups.csv`.
 
@@ -154,4 +154,4 @@ The bash script CE0_PL9_Diamond.sh was used to run DIAMOND Fast analysis on the 
 bash scripts/CE0_PL9_Diamond.sh
 ```
 
-This created the file `CE0_PL9rundiamondfast.tsv` which was used to run the Juypter notebook [CE0 and PL9](https://lottiej.github.io/Undergrad-Project/notebooks/CE0_PL9.html) to plot clustermaps of the normalised bitscores, query cover and percentage identity for these families. Proteins that contained both CE0 and PL9 domains were identified and written to Cooccurring.csv. Proteins of interest that showed a BSR >1 to the proteins containing both CAZyme family domains were identified then plotted on clustermaps of their BSR values and query cover values.
+This created the file `CE0_PL9rundiamondfast.tsv` which was used to run the Juypter notebook [CE0 and PL9](https://lottiej.github.io/Undergrad-Project/notebooks/CE0_PL9_Plot.html) to plot clustermaps of the normalised bitscores, query cover and percentage identity for these families. Proteins that contained both CE0 and PL9 domains were identified and written to Cooccurring.csv. Proteins of interest that showed a BSR >1 to the proteins containing both CAZyme family domains were identified then plotted on clustermaps of their BSR values and query cover values.
